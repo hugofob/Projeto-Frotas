@@ -133,3 +133,68 @@ body.escuro footer{
     background-color: rgb(245, 239, 239); /* Muda cor de fundo */
     color: rgb(19, 19, 19); /* Muda cor da letra */
 }
+/* ========================================= TABLET ========================================= */
+@media (max-width: 900px){ 
+    .introducao{ 
+        flex-direction: column; /* Coloca imagem abaixo do texto */ 
+        text-align: center; /* Centraliza o texto */ 
+    } 
+    .sobre-imagem{ 
+        width: 100%; /* Ocupa toda a largura */ 
+    } 
+    .sobre-imagem img{ 
+        max-width: 100%; /* Permite ocupar toda a largura */ 
+    } 
+    .servicos{ 
+        grid-template-columns: repeat(2, 1fr); /* Mantém 2 cards por linha */ 
+    } 
+} 
+
+/* ========================================= CELULAR ========================================= */ 
+@media (max-width: 600px){ 
+    body > h1{ 
+        font-size: 28px; /* Diminui o título */ 
+        padding: 35px 20px 15px; /* Diminui o espaço */ 
+    } 
+    body > h2{ 
+        font-size: 16px; /* Diminui o subtítulo */ 
+        padding-bottom: 30px; /* Diminui o espaço inferior */ 
+    } 
+    .introducao{ 
+        padding: 50px 20px; /* Diminui o espaço da introdução */ 
+    } 
+    .sobre-texto h2{ 
+        font-size: 32px; /* Diminui o título */ 
+    } 
+    .sobre-texto p{ 
+        font-size: 16px; /* Diminui o texto */ 
+    } 
+    .sobre-imagem img{ 
+        height: 250px; /* Diminui a altura da imagem */ 
+    } 
+    .servicos{ 
+        padding: 40px 20px; /* Diminui o espaço da seção */ 
+        grid-template-columns: 1fr; /* Coloca apenas 1 card por linha */ 
+    } 
+    .titulo-servicos{ 
+        grid-column: 1; /* Faz o título ocupar uma coluna */ 
+    } 
+    .titulo-servicos h2{ 
+        font-size: 28px; /* Diminui o título */ 
+    } 
+    .card-servico{ 
+        padding: 25px 20px; /* Diminui o espaço dos cards */ 
+    } 
+    .card-servico i{ 
+        width: 48px; /* Deixa o ícone menor no celular */ 
+        height: 48px; /* Deixa a caixa menor */ 
+        font-size: 21px; /* Diminui o ícone */ 
+    } 
+    .sobre-final{ 
+        margin: 20px; /* Cria espaço nas laterais */ 
+        padding: 45px 20px; /* Diminui o espaço interno */ 
+    } 
+    .sobre-final h2{ 
+        font-size: 27px; /* Diminui o título */ 
+    } 
+}
